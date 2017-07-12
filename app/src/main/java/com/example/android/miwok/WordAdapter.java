@@ -38,9 +38,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Get the {@link AndroidFlavor} object located at this position in the list
         Word currentWordFlavor = getItem(position);
 
-        View textContainer = listItemView.findViewById(R.id.textContainer);
+        //View textContainer = listItemView.findViewById(R.id.textContainer);
         int color = ContextCompat.getColor(getContext(), colourResourceId);
-        textContainer.setBackgroundColor(color);
+        listItemView.setBackgroundColor(color);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
